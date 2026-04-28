@@ -1,0 +1,293 @@
+/* ==========================================================================
+   履歴書 (JIS規格風) - A3横向き 2カラムレイアウト
+   ========================================================================== */
+
+@page {
+	size: A3 landscape;
+	margin: 10mm;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Yu Mincho",
+		"YuMincho", "MS Mincho", serif;
+	font-size: 9pt;
+	line-height: 1.5;
+	color: #1a1a1a;
+}
+
+/* デフォルトの md-to-pdf 出力スタイルをリセット */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	border: none;
+}
+
+p {
+	margin: 0;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+ul {
+	margin: 0;
+	padding-left: 1.2em;
+}
+
+/* ---------- ヘッダー ---------- */
+.resume-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 6mm;
+	padding: 0 4mm;
+}
+
+.resume-title {
+	font-size: 24pt;
+	letter-spacing: 0.6em;
+	font-weight: normal;
+}
+
+.resume-date {
+	font-size: 10pt;
+}
+
+/* ---------- 2カラムグリッド ---------- */
+.resume-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8mm;
+}
+
+/* ---------- 共通テーブル枠線 ---------- */
+.bordered-table,
+.bordered-table th,
+.bordered-table td {
+	border: 1px solid #1a1a1a;
+}
+
+.bordered-table th,
+.bordered-table td {
+	padding: 4pt 6pt;
+	vertical-align: top;
+	font-weight: normal;
+	text-align: left;
+}
+
+/* ---------- プロフィール枠（テーブル版） ---------- */
+.profile-table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #1a1a1a;
+	margin-bottom: 4mm;
+	table-layout: fixed;
+}
+
+.profile-table > tbody > tr > td {
+	border: 1px solid #1a1a1a;
+	padding: 3pt 6pt;
+	vertical-align: top;
+	font-weight: normal;
+}
+
+.profile-table .furigana {
+	font-size: 7.5pt;
+	color: #444;
+	letter-spacing: 0.05em;
+	margin-bottom: 1pt;
+}
+
+.profile-table .cell-label {
+	font-size: 7.5pt;
+	color: #444;
+	margin-right: 8pt;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* 1行目: ふりがな（左 colspan=2）+ 写真（rowspan=3 の右） */
+.profile-table .furigana-cell {
+	font-size: 7.5pt;
+	color: #444;
+	height: 5mm;
+}
+
+/* 2行目: 氏名 */
+.profile-table .name-cell {
+	height: 18mm;
+	vertical-align: middle;
+}
+
+.profile-table .name-cell .name {
+	font-size: 20pt;
+	letter-spacing: 0.4em;
+	margin-left: 6pt;
+}
+
+/* 3行目: 生年月日 / 性別 */
+.profile-table .birth-cell {
+	width: 70%;
+	vertical-align: middle;
+	font-size: 9.5pt;
+}
+
+.profile-table .gender-cell {
+	width: 18%;
+	vertical-align: middle;
+	font-size: 9.5pt;
+	text-align: left;
+}
+
+.profile-table .gender-mark {
+	font-size: 7pt;
+	color: #444;
+	margin-right: 4pt;
+}
+
+/* 4行目: 現住所 + 電話 */
+.profile-table .address-cell {
+	height: 22mm;
+	vertical-align: top;
+}
+
+.profile-table .address-cell .furigana {
+	margin-bottom: 4pt;
+}
+
+/* 5行目: 連絡先 + 電話 */
+.profile-table .contact-cell {
+	height: 14mm;
+	vertical-align: top;
+}
+
+.profile-table .contact-note {
+	font-size: 7pt;
+	color: #555;
+}
+
+/* 電話セル（共通） */
+.profile-table .tel-cell {
+	width: 32mm;
+	font-size: 9.5pt;
+}
+
+.profile-table .tel-label {
+	font-size: 7.5pt;
+	color: #444;
+	margin-bottom: 2pt;
+}
+
+/* 写真欄（rowspan=3 で右上に固定） */
+.profile-table .photo-cell {
+	width: 32mm;
+	text-align: center;
+	vertical-align: middle;
+	padding: 2pt;
+	background: #fafafa;
+}
+
+.profile-table .photo-img {
+	display: block;
+	width: 30mm;
+	height: 40mm;
+	object-fit: cover;
+	margin: 0 auto;
+}
+
+/* ---------- 学歴・職歴 / 免許・資格 テーブル ---------- */
+.history-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 4mm;
+}
+
+.history-table th,
+.history-table td {
+	border: 1px solid #1a1a1a;
+	padding: 3pt 6pt;
+	font-weight: normal;
+	vertical-align: top;
+}
+
+.history-table thead th {
+	text-align: center;
+	font-weight: normal;
+	font-size: 9pt;
+	background: #fff;
+}
+
+.history-table .col-year {
+	width: 12%;
+	text-align: center;
+}
+
+.history-table .col-month {
+	width: 8%;
+	text-align: center;
+}
+
+.history-table .section-row td {
+	text-align: center;
+	font-weight: normal;
+}
+
+.history-table .end-row td {
+	text-align: right;
+}
+
+.history-table .empty-row td {
+	height: 7mm;
+}
+
+/* ---------- 志望動機・自己PR 枠 ---------- */
+.boxed {
+	border: 1px solid #1a1a1a;
+	padding: 4pt 8pt;
+	margin-bottom: 4mm;
+}
+
+.boxed .box-label {
+	font-size: 8pt;
+	color: #444;
+	margin-bottom: 4pt;
+}
+
+.boxed .box-content {
+	font-size: 9pt;
+	line-height: 1.7;
+	white-space: pre-wrap;
+}
+
+.boxed--motivation .box-content {
+	min-height: 90mm;
+}
+
+.boxed--wishes .box-content {
+	min-height: 24mm;
+}
+
+/* ---------- 注釈 ---------- */
+.footnote {
+	font-size: 7.5pt;
+	color: #666;
+	margin-top: 2mm;
+}

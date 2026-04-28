@@ -1,0 +1,263 @@
+/* ==========================================================================
+   職務経歴書 - A4縦
+   ========================================================================== */
+
+@page {
+	size: A4;
+	margin: 15mm 15mm 18mm 15mm;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro",
+		"Yu Gothic", "YuGothic", "Meiryo", "Noto Sans JP", sans-serif;
+	font-size: 10pt;
+	line-height: 1.7;
+	color: #1a1a1a;
+}
+
+/* デフォルト要素のリセット */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	border: none;
+	background: none;
+}
+
+p {
+	margin: 0 0 6pt 0;
+}
+
+ul {
+	margin: 0 0 4pt 0;
+	padding-left: 1.4em;
+}
+
+li {
+	margin: 1pt 0;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/* ---------- ドキュメントヘッダー ---------- */
+.career-header {
+	text-align: center;
+	margin-bottom: 4mm;
+}
+
+.career-title {
+	font-size: 14pt;
+	font-weight: normal;
+	margin-bottom: 4mm;
+}
+
+.career-meta {
+	text-align: right;
+	font-size: 10pt;
+	margin-bottom: 8mm;
+	line-height: 1.6;
+}
+
+/* ---------- ◼︎ セクション見出し ---------- */
+.section-heading {
+	font-size: 11pt;
+	font-weight: bold;
+	margin-top: 12pt;
+	margin-bottom: 8pt;
+	page-break-after: avoid;
+}
+
+.section-heading::before {
+	content: "■";
+	margin-right: 4pt;
+}
+
+/* ---------- 職務要約 / 自己PR の本文 ---------- */
+.body-text {
+	font-size: 10pt;
+	line-height: 1.8;
+	margin-bottom: 8pt;
+}
+
+/* ---------- 得意分野リスト ---------- */
+.skill-list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0 0 8pt 0;
+}
+
+.skill-list li::before {
+	content: "・";
+	margin-right: 2pt;
+}
+
+/* ---------- スキル一覧表 ---------- */
+.skill-matrix {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 10pt;
+	margin-bottom: 12pt;
+	page-break-inside: auto;
+}
+
+.skill-matrix th,
+.skill-matrix td {
+	border: 1px solid #1a1a1a;
+	padding: 5pt 8pt;
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle;
+}
+
+.skill-matrix thead th {
+	background: #f0f0f0;
+	font-weight: normal;
+}
+
+.skill-matrix .col-category {
+	width: 22%;
+}
+
+.skill-matrix .col-name {
+	width: 22%;
+}
+
+.skill-matrix .col-years {
+	width: 14%;
+}
+
+/* ---------- 会社ヘッダー (グレーバー) ---------- */
+.company-header {
+	border: 1px solid #1a1a1a;
+	background: #d9d9d9;
+	padding: 5pt 10pt;
+	font-size: 10pt;
+	margin-top: 10pt;
+	page-break-after: avoid;
+}
+
+.company-info {
+	border: 1px solid #1a1a1a;
+	border-top: none;
+	background: #fff;
+	padding: 5pt 10pt;
+	font-size: 10pt;
+	margin-bottom: 8pt;
+	white-space: pre-line;
+	page-break-after: avoid;
+}
+
+/* ---------- プロジェクト/会社詳細テーブル (縦型2カラム) ---------- */
+.project-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 10pt;
+	margin: 6pt 0 12pt 0;
+	page-break-inside: avoid;
+}
+
+.project-table th,
+.project-table td {
+	border: 1px solid #1a1a1a;
+	padding: 6pt 10pt;
+	text-align: left;
+	font-weight: normal;
+	vertical-align: top;
+}
+
+.project-table th {
+	background: #fff;
+	width: 28%;
+}
+
+.project-table td {
+	width: 72%;
+}
+
+.project-table ul {
+	margin: 0;
+	padding-left: 1.2em;
+	list-style: none;
+}
+
+.project-table ul li {
+	position: relative;
+	padding-left: 0;
+	margin: 1pt 0;
+}
+
+.project-table ul > li::before {
+	content: "● ";
+	color: #1a1a1a;
+	margin-right: 2pt;
+	font-size: 8pt;
+}
+
+.project-table ul ul {
+	padding-left: 1.4em;
+	margin-top: 2pt;
+}
+
+.project-table ul ul > li::before {
+	content: "○ ";
+	color: #1a1a1a;
+	font-size: 8pt;
+}
+
+.project-table .detail-block {
+	margin-bottom: 6pt;
+}
+
+.project-table .detail-block:last-child {
+	margin-bottom: 0;
+}
+
+.project-table .detail-label {
+	font-weight: normal;
+	margin-bottom: 2pt;
+}
+
+/* ---------- 文末 ---------- */
+.end-mark {
+	text-align: right;
+	margin-top: 12pt;
+	font-size: 10pt;
+}
+
+.note {
+	font-size: 9pt;
+	color: #444;
+	margin-top: 6pt;
+}
+
+/* ---------- 印刷時の改ページ制御 ---------- */
+@media print {
+	.section-heading {
+		page-break-after: avoid;
+	}
+	.project-table {
+		page-break-inside: avoid;
+	}
+	.company-header,
+	.company-info {
+		page-break-after: avoid;
+	}
+}

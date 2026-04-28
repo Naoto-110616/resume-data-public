@@ -1,0 +1,14 @@
+{
+  "name": "resume-data",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Markdown から履歴書・職務経歴書 PDF を生成するテンプレート",
+  "scripts": {
+    "pdf:resume": "node scripts/build-pdf.js resume",
+    "pdf:career": "node scripts/build-pdf.js career",
+    "pdf": "node scripts/build-pdf.js"
+  },
+  "devDependencies": {
+    "md-to-pdf": "^5.2.5"
+  }
+}

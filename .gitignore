@@ -1,0 +1,22 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# エディタ
+.vscode/
+.idea/
+
+# node
+node_modules/
+
+# local personal data
+.env
+.env.local
+*.local.*
+
+# generated files
+exports/
+documents/.build_*.md
+
+# private assets
+sample/sample.jpg
