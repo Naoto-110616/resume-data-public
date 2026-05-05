@@ -51,8 +51,8 @@
     <tr><td rowspan="2">CMS / EC</td><td>WordPress</td><td>1年</td><td>通常使用に問題なし</td></tr>
     <tr><td>Shopify Plus</td><td>1年</td><td>Liquid / アプリ連携・運用</td></tr>
     <tr><td rowspan="3">テスト / コンポーネント</td><td>Storybook</td><td>2年</td><td>コンポーネントカタログ運用、デザイナー連携に活用</td></tr>
-    <tr><td>Vitest / Jest</td><td>学習中</td><td>個人学習で取り組み中</td></tr>
-    <tr><td>Playwright</td><td>学習中</td><td>個人学習で取り組み中</td></tr>
+    <tr><td>Vitest / Jest</td><td>1年</td><td>業務での導入実績あり（自社サイトで Vitest を採用）、習熟は途上</td></tr>
+    <tr><td>Playwright</td><td>1年</td><td>業務での導入実績あり（自社サイト・KOSE 案件）、習熟は途上</td></tr>
     <tr><td rowspan="3">CI/CD・運用</td><td>GitHub Actions</td><td>1年</td><td>Lint / テスト / デプロイの自動化を構築</td></tr>
     <tr><td>Vercel</td><td>3年</td><td>Next.js プロジェクトの本番デプロイで利用</td></tr>
     <tr><td>Shopify ↔ GitHub 自動デプロイ</td><td>1年</td><td>手動デプロイから連携基盤を整備しデグレを抑制</td></tr>
@@ -91,12 +91,12 @@
         小規模の自社サイトであることと、非エンジニアによるコンテンツ運用を見据え、初期/運用コストと DX を両立する構成を選定しました。<br>
         ・<strong>Contentful</strong>：管理画面でのコンテンツ編集・型生成 (TypeScript) を備え、無料プラン枠で運用可能なため採用。<br>
         ・<strong>Vercel</strong>：Next.js との親和性、無料枠でのプレビュー環境、デプロイ自動化の容易さから選定。<br>
-        ・<strong>Resend</strong>：React Email と組み合わせた問い合わせ通知が実装でき、無料枠で運用できる点を評価。<br>
+        ・<strong>Resend</strong>：シンプルな API で問い合わせ通知をメール送信でき、無料枠で運用できる点を評価。<br>
         Next.js 16（App Router）採用のうえ、News / Projects 一覧のような変動コンテンツは API Routes + TanStack Query で SWR 的に取得し、編集後の鮮度と UI の即時性を両立しています。お問い合わせ導線は reCAPTCHA・レート制限・冪等性チェックをサーバ側で実装し、Resend と Slack 通知を併用して受信漏れを抑える設計としました。
       </div>
     </td>
   </tr>
-  <tr><th>利用技術</th><td>TypeScript, Next.js (App Router), React 19, Tailwind CSS, Vercel, Contentful, Resend, TanStack Query, Storybook, Vitest, Playwright</td></tr>
+  <tr><th>利用技術</th><td>TypeScript, Next.js 16 (App Router), React 19, Tailwind CSS, Vercel, Contentful, Resend, TanStack Query, Storybook, Vitest, Playwright</td></tr>
 </table>
 
 <!-- ============================ {{COMPANY_80}} ============================ -->
@@ -109,7 +109,7 @@
   <tr><th>プロジェクト内容</th><td>海外向け衣服レンタルサービス</td></tr>
   <tr><th>期間</th><td>2025年8月〜現在</td></tr>
   <tr><th>職種</th><td>フロントエンドエンジニア</td></tr>
-  <tr><th>役割</th><td>リーダー / エンジニアリングマネージャー</td></tr>
+  <tr><th>役割</th><td>リーダー</td></tr>
   <tr><th>仕事内容</th><td>受託開発</td></tr>
   <tr><th>チーム規模</th><td>1〜10人</td></tr>
   <tr>
@@ -118,29 +118,31 @@
       <div class="detail-block">
         <div class="detail-label">▼担当業務</div>
         <ul>
-          <li>フロントエンドの技術選定</li>
-          <li>コンポーネント設計</li>
-          <li>状態管理設計</li>
-          <li>API 連携</li>
-          <li>管理画面の共通化</li>
+          <li>新規機能のコンポーネント設計</li>
+          <li>状態管理設計（Zustand）</li>
+          <li>多言語 / タイムゾーン対応（next-intl, date-fns-tz）</li>
+          <li>API 連携（TanStack Query + 社内 API クライアントパッケージ）</li>
+          <li>フォームバリデーション設計（react-hook-form + Zod）</li>
+          <li>社内共通 UI ライブラリ（@80andco/next-shared-ui）の活用とフィードバック</li>
+          <li>AI 開発ツール（Claude / Cursor / Figma MCP）の導入・運用</li>
           <li>メンバーへのタスク分配</li>
           <li>運用保守</li>
         </ul>
       </div>
       <div class="detail-block">
         <div class="detail-label">▼実績</div>
-        技術選定から設計、実装方針、運用保守まで一貫して主導しました。管理画面の共通化を進め、継続開発しやすい構成づくりに貢献しました。
+        Next.js 15（App Router）/ React 19 / Tailwind CSS v4 を採用したフロント上で、新規機能のコンポーネント設計と状態管理設計を主導しました。海外ユーザー向けサービスとして <strong>next-intl による多言語化</strong> と <strong>date-fns-tz によるタイムゾーン対応</strong> を組み込み、地域差を意識した UX を担保しています。フォーム周りは <strong>react-hook-form + Zod</strong> で型と検証を一元化し、リクエスト層は <strong>TanStack Query</strong> と社内 API クライアントパッケージを組み合わせて、キャッシュ・再取得・型安全を統一しました。Radix UI ベースの社内共通 UI ライブラリにアクセシビリティ観点のフィードバックを返しながら採用を進め、画面間の体験統一とコードベースの肥大化抑制に貢献しました。Figma MCP / Claude / Cursor を活用した実装フローを取り入れ、デザイン読み取りから実装までのリードタイム短縮にも取り組んでいます。
       </div>
     </td>
   </tr>
-  <tr><th>利用技術</th><td>Next.js, Figma, Claude, Cursor, Figma MCP</td></tr>
+  <tr><th>利用技術</th><td>TypeScript, Next.js 15 (App Router), React 19, Tailwind CSS v4, next-intl, TanStack Query, Radix UI, Zustand, react-hook-form, Zod, Storybook, Figma, Claude, Cursor, Figma MCP</td></tr>
 </table>
 
 <table class="project-table">
-  <tr><th>プロジェクト内容</th><td>{{CLIENT_KOSE}}<br>ネイル販売 EC サイト</td></tr>
+  <tr><th>プロジェクト内容</th><td>{{CLIENT_KOSE}}<br>ネイル販売 EC サイト（Shopify テーマ運用 + Checkout UI Extensions）</td></tr>
   <tr><th>期間</th><td>2024年8月〜現在</td></tr>
-  <tr><th>職種</th><td>フロントエンドエンジニア</td></tr>
-  <tr><th>役割</th><td>リーダー / エンジニアリングマネージャー</td></tr>
+  <tr><th>職種</th><td>フロントエンドエンジニア（エンジニアリングマネージャー兼任）</td></tr>
+  <tr><th>役割</th><td>エンジニアリングマネージャー</td></tr>
   <tr><th>仕事内容</th><td>受託開発</td></tr>
   <tr><th>チーム規模</th><td>1〜10人</td></tr>
   <tr>
@@ -159,19 +161,19 @@
       </div>
       <div class="detail-block">
         <div class="detail-label">▼実績</div>
-        顧客から直接要件をヒアリングする形で要件定義を担当し、プラグイン選定では「コスト・将来の保守性・社内知見の有無」を判断軸に、長期運用に耐える構成を優先しました。Shopify 標準やアプリでは実現できないカスタムロジック（外部 API 連携・Webhook 後処理）は <strong>AWS Lambda</strong> に切り出し、テーマ側のロジック肥大化を防ぐ構成としました。<br>
+        顧客から直接要件をヒアリングする形で要件定義を担当し、プラグイン選定では「コスト・将来の保守性・社内知見の有無」を判断軸に、長期運用に耐える構成を優先しました。Shopify 標準やアプリでは実現できないカスタムロジック（外部 API 連携・Webhook 後処理）は <strong>AWS Lambda</strong> に切り出し、テーマ側のロジック肥大化を防ぐ構成としました。決済画面の独自要件は <strong>Shopify Checkout UI Extensions（Remix / Prisma）</strong> として別アプリに分離し、テーマと拡張機能で責務を分けています。<br>
         コードレビューでは「将来の他メンバーが読めるか（保守性・可読性）」と「コンポーネント分割の妥当性・命名」を中心に確認し、Liquid / JS の責務分離と命名規則をチーム標準として整備しました。オフショアチームに対しては、レビュー時の指摘を「型」として残しナレッジ化することで、レビュー1回あたりの差し戻し件数を継続的に減らしています。タスク整理、タスク割り振り、スケジュール管理などのマネジメント業務、および外部デザインチームとの連携も担当しました。
       </div>
     </td>
   </tr>
-  <tr><th>利用技術</th><td>Tailwind CSS, Shopify Plus, JavaScript, Liquid, AWS Lambda, Linear</td></tr>
+  <tr><th>利用技術</th><td>TypeScript, Tailwind CSS, Shopify Plus, JavaScript, Liquid, Remix, Prisma, AWS Lambda, Jest, Playwright, Linear</td></tr>
 </table>
 
 <table class="project-table">
-  <tr><th>プロジェクト内容</th><td>{{CLIENT_LEO_SOPHIA}}<br>ECサイトの保守運用、追加実装</td></tr>
+  <tr><th>プロジェクト内容</th><td>{{CLIENT_LEO_SOPHIA}}<br>EC サイトの保守運用・追加実装</td></tr>
   <tr><th>期間</th><td>2024年11月〜現在</td></tr>
-  <tr><th>職種</th><td>フロントエンドエンジニア</td></tr>
-  <tr><th>役割</th><td>マネージャー / プロジェクトマネージャー</td></tr>
+  <tr><th>職種</th><td>フロントエンドエンジニア（プロジェクトマネージャー兼任）</td></tr>
+  <tr><th>役割</th><td>プロジェクトマネージャー</td></tr>
   <tr><th>仕事内容</th><td>受託開発</td></tr>
   <tr><th>チーム規模</th><td>10〜50人</td></tr>
   <tr>
@@ -198,8 +200,8 @@
 </table>
 
 <table class="project-table">
-  <tr><th>プロジェクト内容</th><td>伝統工芸品サブスクリプションサービス EC サイトリニューアル</td></tr>
-  <tr><th>期間</th><td>2024年6月〜2024年8月</td></tr>
+  <tr><th>プロジェクト内容</th><td>{{CLIENT_KYOTO_SHIMBUN}}<br>伝統工芸品サブスクリプション EC サイト（初期構築 / 2 年後のリニューアル）</td></tr>
+  <tr><th>期間</th><td>2022年5月〜2022年8月、2024年6月〜2024年8月</td></tr>
   <tr><th>職種</th><td>フロントエンドエンジニア</td></tr>
   <tr><th>役割</th><td>メンバー</td></tr>
   <tr><th>仕事内容</th><td>受託開発</td></tr>
@@ -208,7 +210,13 @@
     <th>プロジェクト詳細・担当業務・主な実績</th>
     <td>
       <div class="detail-block">
-        <div class="detail-label">▼担当業務</div>
+        <div class="detail-label">▼担当業務（2022 年 / 初期構築）</div>
+        <ul>
+          <li>コンポーネント実装、UI / ページ実装</li>
+          <li>レスポンシブデザインの実現</li>
+          <li>GSAP を用いたアニメーション提案・実装</li>
+        </ul>
+        <div class="detail-label">▼担当業務（2024 年 / リニューアル）</div>
         <ul>
           <li>サイトリニューアルに伴うフロントエンド実装</li>
           <li>コンポーネント設計の見直し</li>
@@ -217,38 +225,12 @@
       </div>
       <div class="detail-block">
         <div class="detail-label">▼実績</div>
-        コンポーネント構成を見直し、保守性と再利用性を高めました。デザイン刷新とバックエンド連携を両立し、サイト改修を推進しました。
+        2022 年の初期構築では、フロントエンド開発として初めてコンポーネント実装を担当し、自己学習と上司のサポートを活用しながらデザイン再現性の高いページ構築に貢献しました。後半では GSAP を用いたアニメーションを提案・実装し、UI / UX を改善しています。<br>
+        2 年後の 2024 年に同案件のリニューアルへ再参画し、既存実装の責務分離を整理してコンポーネント構成を見直すことで、保守性と再利用性を高める方向に設計を更新しました。<strong>同一クライアントから時間を空けて再指名いただけたことが、長期にわたる信頼関係の証</strong>と捉えています。
       </div>
     </td>
   </tr>
-  <tr><th>利用技術</th><td>Next.js, Tailwind CSS</td></tr>
-</table>
-
-<table class="project-table">
-  <tr><th>プロジェクト内容</th><td>企業向け人材紹介サイト</td></tr>
-  <tr><th>期間</th><td>2024年1月〜2024年5月</td></tr>
-  <tr><th>職種</th><td>フロントエンドエンジニア</td></tr>
-  <tr><th>役割</th><td>メンバー</td></tr>
-  <tr><th>仕事内容</th><td>受託開発</td></tr>
-  <tr><th>チーム規模</th><td>10〜50人</td></tr>
-  <tr>
-    <th>プロジェクト詳細・担当業務・主な実績</th>
-    <td>
-      <div class="detail-block">
-        <div class="detail-label">▼担当業務</div>
-        <ul>
-          <li>コンポーネント修正</li>
-          <li>バグ修正</li>
-          <li>開発チームとの連携によるスポット支援</li>
-        </ul>
-      </div>
-      <div class="detail-block">
-        <div class="detail-label">▼実績</div>
-        スポットでの改修対応を通じて、サイトの安定稼働に貢献しました。既存実装を素早く把握し、効率的に修正を進行しました。
-      </div>
-    </td>
-  </tr>
-  <tr><th>利用技術</th><td>Next.js, Tailwind CSS</td></tr>
+  <tr><th>利用技術</th><td>TypeScript, Next.js, Tailwind CSS, Stripe, Laravel, AWS (ECS), Storybook, GSAP</td></tr>
 </table>
 
 <table class="project-table">
@@ -309,33 +291,7 @@
       </div>
     </td>
   </tr>
-  <tr><th>利用技術</th><td>Next.js, Tailwind CSS, Laravel, AWS, Figma, Storybook</td></tr>
-</table>
-
-<table class="project-table">
-  <tr><th>プロジェクト内容</th><td>マタニティ向け飲料販売 EC サイト</td></tr>
-  <tr><th>期間</th><td>2022年10月〜2023年3月</td></tr>
-  <tr><th>職種</th><td>フロントエンドエンジニア</td></tr>
-  <tr><th>役割</th><td>メンバー</td></tr>
-  <tr><th>仕事内容</th><td>受託開発</td></tr>
-  <tr><th>チーム規模</th><td>10〜50人</td></tr>
-  <tr>
-    <th>プロジェクト詳細・担当業務・主な実績</th>
-    <td>
-      <div class="detail-block">
-        <div class="detail-label">▼担当業務</div>
-        <ul>
-          <li>コンポーネント設計</li>
-          <li>API 連携</li>
-        </ul>
-      </div>
-      <div class="detail-block">
-        <div class="detail-label">▼実績</div>
-        再利用可能な UI コンポーネントを設計し、継続開発しやすい構成を整備しました。API 連携を通じてフロントエンドの機能拡張に貢献しました。
-      </div>
-    </td>
-  </tr>
-  <tr><th>利用技術</th><td>Laravel, Next.js</td></tr>
+  <tr><th>利用技術</th><td>TypeScript, Next.js, Tailwind CSS, TanStack Query, react-hook-form, Stripe, Laravel, AWS (ECS), Figma, Storybook</td></tr>
 </table>
 
 <table class="project-table">
@@ -364,63 +320,6 @@
     </td>
   </tr>
   <tr><th>利用技術</th><td>TypeScript, Next.js, microCMS, Vercel</td></tr>
-</table>
-
-<table class="project-table">
-  <tr><th>プロジェクト内容</th><td>{{CLIENT_KYOTO_SHIMBUN}}<br>伝統工芸品サブスクリプション EC サイト</td></tr>
-  <tr><th>期間</th><td>2022年5月〜2022年8月</td></tr>
-  <tr><th>職種</th><td>フロントエンドエンジニア</td></tr>
-  <tr><th>役割</th><td>メンバー</td></tr>
-  <tr><th>仕事内容</th><td>受託開発</td></tr>
-  <tr><th>チーム規模</th><td>10〜50人</td></tr>
-  <tr>
-    <th>プロジェクト詳細・担当業務・主な実績</th>
-    <td>
-      <div class="detail-block">
-        <div class="detail-label">▼担当業務</div>
-        <ul>
-          <li>フロントエンド開発
-            <ul>
-              <li>コンポーネント実装</li>
-              <li>サイトのユーザーインターフェース（UI）とページ実装</li>
-              <li>効率的なスタイリングとレスポンシブデザインの実現</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="detail-block">
-        <div class="detail-label">▼実績</div>
-        プロジェクトにおいて初めてコンポーネント実装を担当し、自己学習と上司のサポートを活用して、高品質な開発を達成しました。デザイン再現性の高さを活かしてページ構築に大きく貢献し、後半では GSAP を用いたアニメーションを提案・実装して UI / UX を改善しました。フルリモート環境での作業に最初は戸惑いもありましたが、経験を通じて一人称で責任感を持って作業を進められるよう成長し、今後のプロジェクトで活用できるコンポーネント設計や実装の基盤を身に着けました。
-      </div>
-    </td>
-  </tr>
-  <tr><th>利用技術</th><td>Next.js, Tailwind CSS, Laravel, AWS, XD, GSAP</td></tr>
-</table>
-
-<table class="project-table">
-  <tr><th>プロジェクト内容</th><td>ゲームを使用した教育サービスのコーポレートサイト運用</td></tr>
-  <tr><th>期間</th><td>2022年5月</td></tr>
-  <tr><th>職種</th><td>フロントエンドエンジニア</td></tr>
-  <tr><th>役割</th><td>メンバー</td></tr>
-  <tr><th>仕事内容</th><td>受託開発</td></tr>
-  <tr><th>チーム規模</th><td>1〜10人</td></tr>
-  <tr>
-    <th>プロジェクト詳細・担当業務・主な実績</th>
-    <td>
-      <div class="detail-block">
-        <div class="detail-label">▼担当業務</div>
-        <ul>
-          <li>デザインに沿ったコーディング</li>
-          <li>保守運用</li>
-        </ul>
-      </div>
-      <div class="detail-block">
-        <div class="detail-label">▼実績</div>
-        デザイン再現を意識した実装と継続運用を通じて、初期の実務経験を積み上げました。
-      </div>
-    </td>
-  </tr>
-  <tr><th>利用技術</th><td>PHP, WordPress</td></tr>
 </table>
 
 <!-- ============================ {{COMPANY_IDEAIMAGE}} ============================ -->
@@ -461,19 +360,15 @@
 <h2 class="section-heading">自己PR</h2>
 
 <p class="body-text">
-Next.js / TypeScript / Tailwind CSS を中心とした、デザイン再現性の高いフロントエンド実装を得意としています。デザインをパーツ単位に分解し、ロジック層と UI 層を明確に分けたディレクトリ構造を採用しているのは、<strong>仕様変更時の影響範囲を局所化し、テスタビリティとレビュー容易性を高めるため</strong>です。再利用可能な単位を意識した粒度設計と、Figma から受け取った意図を細部まで丁寧に反映することで、再現性と保守性の両立に注力しています。
+<strong>デザイン再現性の高い実装と、仕組みで品質を担保する開発設計</strong> を得意としています。Next.js / TypeScript / Tailwind CSS を中心に、ロジック層と UI 層を分けたディレクトリ構造で仕様変更時の影響範囲を局所化し、テスタビリティとレビュー容易性を高めています。直近ではリーダーとして顧客折衝・技術選定・コードレビューを担い、自社サイトでは「非エンジニアによる更新運用」「将来の保守性」を踏まえた構成を選定しました。Shopify ↔ GitHub 自動デプロイの整備や Storybook によるコンポーネント可視化など、品質を「レビュー」ではなく「仕組み」で支える取り組みを推進しています。
 </p>
 
 <p class="body-text">
-直近ではリーダーとして、顧客折衝・技術選定・コードレビューを一貫して担っています。受託案件では顧客から直接要件をヒアリングし、社内に知見のない領域はプラグイン調査・導入から自ら推進しました。自社コーポレートサイトでは、運用コスト・非エンジニアによる更新運用・将来の保守性を踏まえた技術選定を行い、コンテンツ更新や問い合わせ運用を含めた公開・更新フローまで整備しました。<strong>品質保証は「レビュー時の指摘」だけで終わらせず、Shopify ↔ GitHub 自動デプロイの整備や Storybook によるコンポーネント可視化など、仕組みで担保する</strong> ことを重視しています。
+<strong>チーム横断のコミュニケーション</strong> も強みです。デイリースクラムのファシリテーション、オフショア・デザイン・ビジネスサイドとの連携、海外メンバーとの時差を考慮した非同期運用の整備など、リモート環境でもチームが機能する状態づくりに注力してきました。部署間で責任範囲が曖昧になりやすい場面では、役割を言語化し直して認識を揃えることを意識しています。
 </p>
 
 <p class="body-text">
-チーム横断のコミュニケーションも強みです。デイリースクラムではファシリテーターを務め、オフショアチームやデザインチーム、ビジネスサイドと密に連携しながら、タスク整理・スケジュール調整・要件整理を進めてきました。部署間で責任範囲が曖昧になりやすい場面でも、お互いの役割を言語化し直すことを意識し、リモート環境でもチーム全体が機能するようサポートしています。
-</p>
-
-<p class="body-text">
-デザイン領域への関心も強く、Figma を読み取るだけでなく、XD から Figma への移行提案・コンポーネント命名のすり合わせ・色 / アニメーション duration / opacity の共通化など、デザイントークンに通じる運用設計にも取り組んできました。今後はフロントエンドの専門性を一段深めつつ、デザイン領域の知見と掛け合わせ、UI / UX を起点に価値を生み出せるエンジニアを目指したいと考えています。デザイン再現性の高い実装やコンポーネント設計、リーダーとしての推進力を活かしながら、ユーザー体験そのものに踏み込み、サービスの磨き込みに貢献していきたいです。
+<strong>デザイン領域への関心</strong> も強く、XD から Figma への移行提案、コンポーネント命名のすり合わせ、色 / アニメーション duration / opacity の共通化など、デザイントークンに通じる運用設計にも取り組んできました。今後はフロントエンドの専門性を深めつつ、デザイン領域の知見と掛け合わせ、UI / UX を起点に価値を生み出せるエンジニアを目指しています。
 </p>
 
 <p class="body-text">
