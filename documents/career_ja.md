@@ -10,7 +10,7 @@
 <h2 class="section-heading">職務要約</h2>
 
 <p class="body-text">
-在阪のテレビ番組制作や社内インターネット監視業務を経て、2021年から Web エンジニアとしてキャリアをスタートし、現在まで約5年間フロントエンド開発に従事してきました。Next.js / TypeScript / Tailwind CSS を中心に、デザイン再現性の高いコンポーネント設計、Shopify Plus を用いた EC 開発、Laravel を用いた API 実装まで幅広く担当しています。直近ではリーダーとして顧客折衝・技術選定・コードレビューを担い、自社コーポレートサイトでは UI 設計から実装・運用フロー整備まで一貫して担当しました。今後はフロントエンドの専門性とデザイン領域の知見を掛け合わせ、UI / UX を起点に価値を生み出せるエンジニアを目指しています。
+2021年に Web エンジニアとしてキャリアをスタートし、現在まで約5年間フロントエンド開発に従事。Next.js / TypeScript / Tailwind CSS を軸に、EC サイト開発・コーポレートサイト構築など幅広く担当。直近ではリーダーとして顧客折衝・技術選定・コードレビューも担う。
 </p>
 
 <h2 class="section-heading">得意とする分野・スキル</h2>
@@ -51,8 +51,8 @@
     <tr><td rowspan="2">CMS / EC</td><td>WordPress</td><td>1年</td><td>通常使用に問題なし</td></tr>
     <tr><td>Shopify Plus</td><td>1年</td><td>Liquid / アプリ連携・運用</td></tr>
     <tr><td rowspan="3">テスト / コンポーネント</td><td>Storybook</td><td>2年</td><td>コンポーネントカタログ運用、デザイナー連携に活用</td></tr>
-    <tr><td>Vitest / Jest</td><td>1年</td><td>業務での導入実績あり（自社サイトで Vitest を採用）、習熟は途上</td></tr>
-    <tr><td>Playwright</td><td>1年</td><td>業務での導入実績あり（自社サイト・KOSE 案件）、習熟は途上</td></tr>
+    <tr><td>Vitest / Jest</td><td>1年</td><td>業務での導入実績あり(自社サイトで Vitest を採用)、習熟は途上</td></tr>
+    <tr><td>Playwright</td><td>1年</td><td>業務での導入実績あり(自社サイト・KOSE 案件)、習熟は途上</td></tr>
     <tr><td rowspan="3">CI/CD・運用</td><td>GitHub Actions</td><td>1年</td><td>Lint / テスト / デプロイの自動化を構築</td></tr>
     <tr><td>Vercel</td><td>3年</td><td>Next.js プロジェクトの本番デプロイで利用</td></tr>
     <tr><td>Shopify ↔ GitHub 自動デプロイ</td><td>1年</td><td>手動デプロイから連携基盤を整備しデグレを抑制</td></tr>
@@ -63,6 +63,10 @@
 
 <h2 class="section-heading">職務経歴</h2>
 
+<p class="excerpt-note">
+※ 直近の主要案件を中心に詳細を記載しています。古い案件や補完的な案件は概要のみ抜粋して記載しています（「<strong>概要</strong>」と表記しているもの）。詳細な参画案件一覧は別途ご提示可能です。
+</p>
+
 <!-- ============================ {{COMPANY_ATOMS}} ============================ -->
 <div class="company-header">2026年4月〜現在　{{COMPANY_ATOMS}}</div>
 <div class="company-info">事業内容：受託開発、自社サービス開発
@@ -71,10 +75,8 @@
 <table class="project-table">
   <tr><th>プロジェクト内容</th><td>自社コーポレートサイト構築</td></tr>
   <tr><th>期間</th><td>2026年4月〜現在</td></tr>
-  <tr><th>職種</th><td>フロントエンドエンジニア</td></tr>
-  <tr><th>役割</th><td>リーダー</td></tr>
-  <tr><th>仕事内容</th><td>自社開発</td></tr>
-  <tr><th>チーム規模</th><td>1〜10人</td></tr>
+  <tr><th>職種 / 役割</th><td>フロントエンドエンジニア / リーダー</td></tr>
+  <tr><th>仕事内容 / チーム規模</th><td>自社開発 / 1〜10人</td></tr>
   <tr>
     <th>プロジェクト詳細・担当業務・主な実績</th>
     <td>
@@ -103,15 +105,13 @@
 <div class="company-header">2022年5月〜2026年3月　{{COMPANY_80}}</div>
 <div class="company-info">事業内容：新規事業開発、受託開発
 資本金：2000万円
-従業員数：50人</div>
+従業員数：10人</div>
 
 <table class="project-table">
   <tr><th>プロジェクト内容</th><td>海外向け衣服レンタルサービス</td></tr>
   <tr><th>期間</th><td>2025年8月〜現在</td></tr>
-  <tr><th>職種</th><td>フロントエンドエンジニア</td></tr>
-  <tr><th>役割</th><td>リーダー</td></tr>
-  <tr><th>仕事内容</th><td>受託開発</td></tr>
-  <tr><th>チーム規模</th><td>1〜10人</td></tr>
+  <tr><th>職種 / 役割</th><td>フロントエンドエンジニア / リーダー</td></tr>
+  <tr><th>仕事内容 / チーム規模</th><td>受託開発 / 1〜10人</td></tr>
   <tr>
     <th>プロジェクト詳細・担当業務・主な実績</th>
     <td>
@@ -141,10 +141,8 @@
 <table class="project-table">
   <tr><th>プロジェクト内容</th><td>{{CLIENT_KOSE}}<br>ネイル販売 EC サイト（Shopify テーマ運用 + Checkout UI Extensions）</td></tr>
   <tr><th>期間</th><td>2024年8月〜現在</td></tr>
-  <tr><th>職種</th><td>フロントエンドエンジニア（エンジニアリングマネージャー兼任）</td></tr>
-  <tr><th>役割</th><td>エンジニアリングマネージャー</td></tr>
-  <tr><th>仕事内容</th><td>受託開発</td></tr>
-  <tr><th>チーム規模</th><td>1〜10人</td></tr>
+  <tr><th>職種 / 役割</th><td>フロントエンドエンジニア / エンジニアリングマネージャー（兼任）</td></tr>
+  <tr><th>仕事内容 / チーム規模</th><td>受託開発 / 1〜10人</td></tr>
   <tr>
     <th>プロジェクト詳細・担当業務・主な実績</th>
     <td>
@@ -172,10 +170,8 @@
 <table class="project-table">
   <tr><th>プロジェクト内容</th><td>{{CLIENT_LEO_SOPHIA}}<br>EC サイトの保守運用・追加実装</td></tr>
   <tr><th>期間</th><td>2024年11月〜現在</td></tr>
-  <tr><th>職種</th><td>フロントエンドエンジニア（プロジェクトマネージャー兼任）</td></tr>
-  <tr><th>役割</th><td>プロジェクトマネージャー</td></tr>
-  <tr><th>仕事内容</th><td>受託開発</td></tr>
-  <tr><th>チーム規模</th><td>10〜50人</td></tr>
+  <tr><th>職種 / 役割</th><td>フロントエンドエンジニア / プロジェクトマネージャー（兼任）</td></tr>
+  <tr><th>仕事内容 / チーム規模</th><td>受託開発 / 10〜50人</td></tr>
   <tr>
     <th>プロジェクト詳細・担当業務・主な実績</th>
     <td>
@@ -202,10 +198,8 @@
 <table class="project-table">
   <tr><th>プロジェクト内容</th><td>{{CLIENT_KYOTO_SHIMBUN}}<br>伝統工芸品サブスクリプション EC サイト（初期構築 / 2 年後のリニューアル）</td></tr>
   <tr><th>期間</th><td>2022年5月〜2022年8月、2024年6月〜2024年8月</td></tr>
-  <tr><th>職種</th><td>フロントエンドエンジニア</td></tr>
-  <tr><th>役割</th><td>メンバー</td></tr>
-  <tr><th>仕事内容</th><td>受託開発</td></tr>
-  <tr><th>チーム規模</th><td>1〜10人</td></tr>
+  <tr><th>職種 / 役割</th><td>フロントエンドエンジニア / メンバー</td></tr>
+  <tr><th>仕事内容 / チーム規模</th><td>受託開発 / 1〜10人</td></tr>
   <tr>
     <th>プロジェクト詳細・担当業務・主な実績</th>
     <td>
@@ -233,46 +227,18 @@
   <tr><th>利用技術</th><td>TypeScript, Next.js, Tailwind CSS, Stripe, Laravel, AWS (ECS), Storybook, GSAP</td></tr>
 </table>
 
-<table class="project-table">
-  <tr><th>プロジェクト内容</th><td>{{CLIENT_GASENDO}}<br>子供向けオンライン絵画教室の管理システム</td></tr>
-  <tr><th>期間</th><td>2023年10月〜2024年1月</td></tr>
-  <tr><th>職種</th><td>バックエンドエンジニア</td></tr>
-  <tr><th>役割</th><td>メンバー</td></tr>
-  <tr><th>仕事内容</th><td>受託開発</td></tr>
-  <tr><th>チーム規模</th><td>3人</td></tr>
-  <tr>
-    <th>プロジェクト詳細・担当業務・主な実績</th>
-    <td>
-      <div class="detail-block">
-        <div class="detail-label">▼担当業務</div>
-        <ul>
-          <li>API 実装
-            <ul><li>CRUD ロジックの作成</li></ul>
-          </li>
-          <li>Cron のスケジュール作成
-            <ul><li>LINE 送信</li></ul>
-          </li>
-          <li>ページ実装
-            <ul><li>blade で管理画面ページ作成</li></ul>
-          </li>
-        </ul>
-      </div>
-      <div class="detail-block">
-        <div class="detail-label">▼実績</div>
-        Laravel を使用してバックエンドの開発を担当し、API を作成して、システムのデータ管理機能を実装しました。初めてのバックエンド開発として、API 設計やデータベースの操作を学びながら取り組み、実践を通じてスキルを習得しました。
-      </div>
-    </td>
-  </tr>
-  <tr><th>利用技術</th><td>Laravel, Tailwind CSS</td></tr>
-</table>
+<div class="project-summary">
+  <div class="project-summary-title">【概要】{{CLIENT_GASENDO}} - 子供向けオンライン絵画教室の管理システム</div>
+  <div class="project-summary-meta">2023年10月〜2024年1月 / バックエンドエンジニア / メンバー / 受託開発 / 3人</div>
+  <p class="project-summary-body">初のサーバーサイド経験として、Laravel を用いた API 実装（CRUD ロジック）、Cron スケジュール作成（LINE 送信）、blade による管理画面ページ実装を担当。フロントエンド以外の領域への対応力を実践で身につけました。</p>
+  <div class="project-summary-tech">利用技術：Laravel, Tailwind CSS</div>
+</div>
 
 <table class="project-table">
   <tr><th>プロジェクト内容</th><td>{{CLIENT_AEON}}<br>パーティードレスレンタル EC サイト</td></tr>
   <tr><th>期間</th><td>2023年4月〜2023年9月</td></tr>
-  <tr><th>職種</th><td>フロントエンドエンジニア</td></tr>
-  <tr><th>役割</th><td>メンバー</td></tr>
-  <tr><th>仕事内容</th><td>システムリプレイス</td></tr>
-  <tr><th>チーム規模</th><td>10〜50人</td></tr>
+  <tr><th>職種 / 役割</th><td>フロントエンドエンジニア / メンバー</td></tr>
+  <tr><th>仕事内容 / チーム規模</th><td>システムリプレイス / 10〜50人</td></tr>
   <tr>
     <th>プロジェクト詳細・担当業務・主な実績</th>
     <td>
@@ -294,68 +260,33 @@
   <tr><th>利用技術</th><td>TypeScript, Next.js, Tailwind CSS, TanStack Query, react-hook-form, Stripe, Laravel, AWS (ECS), Figma, Storybook</td></tr>
 </table>
 
-<table class="project-table">
-  <tr><th>プロジェクト内容</th><td>自社コーポレートサイト構築</td></tr>
-  <tr><th>期間</th><td>2022年10月〜2023年1月</td></tr>
-  <tr><th>職種</th><td>フロントエンドエンジニア</td></tr>
-  <tr><th>役割</th><td>メンバー</td></tr>
-  <tr><th>仕事内容</th><td>自社開発</td></tr>
-  <tr><th>チーム規模</th><td>1〜10人</td></tr>
-  <tr>
-    <th>プロジェクト詳細・担当業務・主な実績</th>
-    <td>
-      <div class="detail-block">
-        <div class="detail-label">▼担当業務</div>
-        <ul>
-          <li>コンポーネント設計</li>
-          <li>主要ページの UI 実装</li>
-          <li>microCMS 導入支援</li>
-          <li>Vercel を用いたデプロイ対応</li>
-        </ul>
-      </div>
-      <div class="detail-block">
-        <div class="detail-label">▼実績</div>
-        ページ全体の約 8 割を担当し、短期間でサイト公開に貢献しました。初採用の microCMS を活用し、更新しやすいコンテンツ運用基盤を整備しました。
-      </div>
-    </td>
-  </tr>
-  <tr><th>利用技術</th><td>TypeScript, Next.js, microCMS, Vercel</td></tr>
-</table>
+<div class="project-summary">
+  <div class="project-summary-title">【概要】{{COMPANY_80}} 自社コーポレートサイト構築</div>
+  <div class="project-summary-meta">2022年10月〜2023年1月 / フロントエンドエンジニア / メンバー / 自社開発 / 1〜10人</div>
+  <p class="project-summary-body">主要ページの UI 実装とコンポーネント設計を担当し、ページ全体の約 8 割を担当。社内初採用の <strong>microCMS</strong> 導入支援および <strong>Vercel</strong> デプロイ対応も実施し、更新しやすいコンテンツ運用基盤を整備しました。</p>
+  <div class="project-summary-tech">利用技術：TypeScript, Next.js, microCMS, Vercel</div>
+</div>
 
 <!-- ============================ {{COMPANY_IDEAIMAGE}} ============================ -->
 <div class="company-header">2021年5月〜2022年3月　{{COMPANY_IDEAIMAGE}}</div>
 <div class="company-info">事業内容：Web サイト制作、デザイン制作、ブランディングを提供
 従業員数：10人</div>
 
-<table class="project-table">
-  <tr><th>プロジェクト内容</th><td>WordPress を用いたサイト構築・運用・更新</td></tr>
-  <tr><th>期間</th><td>2021年5月〜2022年3月</td></tr>
-  <tr><th>職種</th><td>フロントエンドエンジニア</td></tr>
-  <tr><th>役割</th><td>メンバー</td></tr>
-  <tr><th>仕事内容</th><td>Web サイト制作・運用・保守</td></tr>
-  <tr><th>チーム規模</th><td>10人</td></tr>
-  <tr>
-    <th>プロジェクト詳細・担当業務・主な実績</th>
-    <td>
-      <div class="detail-block">
-        <div class="detail-label">▼担当業務</div>
-        <ul>
-          <li>WordPress を使用した Web サイト制作
-            <ul>
-              <li>デザインに沿ったコーディング</li>
-              <li>顧客の要求に応じて、サイトの構築・更新を行い、品質向上に貢献</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="detail-block">
-        <div class="detail-label">▼実績</div>
-        デザインを忠実に再現することに注力し、細かい部分まで丁寧に作り込むことでクライアントから好評を得ました。また、チームメンバーと連携しながらプロジェクトを進める中で、効率的にタスクを進行させる方法を学び、フロントエンドの基礎スキルをしっかりと身につけることができました。この経験が Web 開発の土台になっています。
-      </div>
-    </td>
-  </tr>
-  <tr><th>利用技術</th><td>PHP, SCSS, GitLab, HTML5, WordPress, CSS3</td></tr>
-</table>
+<div class="project-summary">
+  <div class="project-summary-title">【概要】WordPress を用いたサイト構築・運用・更新</div>
+  <div class="project-summary-meta">2021年5月〜2022年3月 / フロントエンドエンジニア / メンバー / Web サイト制作・運用・保守 / 10人</div>
+  <p class="project-summary-body">フロントエンドエンジニアとしてのキャリア起点。WordPress を用いた複数案件の構築・運用・更新を担当し、デザイン再現性の高いコーディングや顧客要件に応じた継続改修を通じて、現在に繋がる基礎スキルを習得しました。</p>
+  <div class="project-summary-tech">利用技術：PHP, SCSS, GitLab, HTML5, WordPress, CSS3</div>
+</div>
+
+<div class="self-pr-block">
+<h2 class="section-heading">転職理由・今後のキャリア</h2>
+
+<p class="body-text">
+<!-- TODO: 実際の転職理由に合わせて修正してください -->
+現職（{{COMPANY_ATOMS}}）は {{COMPANY_80}} の会社都合による新会社設立に伴い移籍したもので、受託開発中心の小規模環境が続いています。フロントエンドエンジニアとして5年間経験を積んだ現在、より規模の大きなプロダクト・チームの中でデザインとエンジニアリングを横断した価値貢献に挑戦したいと考え、転職活動を開始しました。<br>
+今後は UI / UX を起点に製品価値を高められるフロントエンドエンジニアとして、3〜5年スパンでデザインエンジニアリング領域へのキャリアを広げることを目標としています。
+</p>
 
 <h2 class="section-heading">自己PR</h2>
 
@@ -376,3 +307,4 @@
 </p>
 
 <div class="end-mark">以上</div>
+</div>

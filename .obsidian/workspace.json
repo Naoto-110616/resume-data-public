@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c04a035b7cbf8a7d",
+        "id": "c379efd59d1235ca",
         "type": "tabs",
         "children": [
           {
-            "id": "5309a587cc8710d9",
+            "id": "f3570d509b24577b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "TODO.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "TODO"
+              "title": "新規タブ"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "TODOへのバックリンク"
+              "title": "バックリンク"
             }
           },
           {
@@ -183,8 +178,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "5309a587cc8710d9",
+  "active": "f3570d509b24577b",
   "lastOpenFiles": [
+    "documents/転職tips/00_転職活動Tips目次.md",
+    "TODO.md",
     "documents/転職tips/面接で通る方の共通項.md",
     "documents/転職tips/技術面接のポイント.md",
     "documents/転職tips/README.md"
