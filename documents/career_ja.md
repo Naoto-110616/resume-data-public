@@ -4,13 +4,15 @@
 
 <div class="career-meta">
   {{TODAY}}<br>
-  氏名：{{OWNER_NAME}}
+  氏名：{{OWNER_NAME}}<br>
+  GitHub：{{GITHUB_URL}}<br>
+  Portfolio：{{PORTFOLIO_URL}}
 </div>
 
 <h2 class="section-heading">職務要約</h2>
 
 <p class="body-text">
-2021年に Web エンジニアとしてキャリアをスタートし、現在まで約5年間フロントエンド開発に従事。Next.js / TypeScript / Tailwind CSS を軸に、EC サイト開発・コーポレートサイト構築など幅広く担当。直近ではリーダーとして顧客折衝・技術選定・コードレビューも担う。
+2021年に Web エンジニアとしてキャリアをスタートし、現在まで約5年間フロントエンド開発に従事。Next.js / TypeScript / Tailwind CSS を軸に、EC サイト開発・コーポレートサイト構築など幅広く担当。直近ではリーダーとして顧客折衝・技術選定・コードレビューも担い、デザインエンジニア・ディレクションなど上流から事業に携わる環境を志向しております。
 </p>
 
 <h2 class="section-heading">得意とする分野・スキル</h2>
@@ -51,8 +53,8 @@
     <tr><td rowspan="2">CMS / EC</td><td>WordPress</td><td>1年</td><td>通常使用に問題なし</td></tr>
     <tr><td>Shopify Plus</td><td>1年</td><td>Liquid / アプリ連携・運用</td></tr>
     <tr><td rowspan="3">テスト / コンポーネント</td><td>Storybook</td><td>2年</td><td>コンポーネントカタログ運用、デザイナー連携に活用</td></tr>
-    <tr><td>Vitest / Jest</td><td>1年</td><td>業務での導入実績あり(自社サイトで Vitest を採用)、習熟は途上</td></tr>
-    <tr><td>Playwright</td><td>1年</td><td>業務での導入実績あり(自社サイト・KOSE 案件)、習熟は途上</td></tr>
+    <tr><td>Vitest / Jest</td><td>1年</td><td>個人学習中（実務導入実績なし）</td></tr>
+    <tr><td>Playwright</td><td>1年</td><td>個人学習中（実務導入実績なし）</td></tr>
     <tr><td rowspan="3">CI/CD・運用</td><td>GitHub Actions</td><td>1年</td><td>Lint / テスト / デプロイの自動化を構築</td></tr>
     <tr><td>Vercel</td><td>3年</td><td>Next.js プロジェクトの本番デプロイで利用</td></tr>
     <tr><td>Shopify ↔ GitHub 自動デプロイ</td><td>1年</td><td>手動デプロイから連携基盤を整備しデグレを抑制</td></tr>
@@ -90,7 +92,7 @@
       </div>
       <div class="detail-block">
         <div class="detail-label">▼実績</div>
-        小規模の自社サイトであることと、非エンジニアによるコンテンツ運用を見据え、初期/運用コストと DX を両立する構成を選定しました。<br>
+        非エンジニアによるコンテンツ運用を見据え、初期・運用コストと DX を両立する構成を選定しました。<br>
         ・<strong>Contentful</strong>：管理画面でのコンテンツ編集・型生成 (TypeScript) を備え、無料プラン枠で運用可能なため採用。<br>
         ・<strong>Vercel</strong>：Next.js との親和性、無料枠でのプレビュー環境、デプロイ自動化の容易さから選定。<br>
         ・<strong>Resend</strong>：シンプルな API で問い合わせ通知をメール送信でき、無料枠で運用できる点を評価。<br>
@@ -98,18 +100,11 @@
       </div>
     </td>
   </tr>
-  <tr><th>利用技術</th><td>TypeScript, Next.js 16 (App Router), React 19, Tailwind CSS, Vercel, Contentful, Resend, TanStack Query, Storybook, Vitest, Playwright</td></tr>
+  <tr><th>利用技術</th><td>TypeScript, Next.js 16 (App Router), React 19, Tailwind CSS, Vercel, Contentful, Resend, TanStack Query, Storybook</td></tr>
 </table>
-
-<!-- ============================ {{COMPANY_80}} ============================ -->
-<div class="company-header">2022年5月〜2026年3月　{{COMPANY_80}}</div>
-<div class="company-info">事業内容：新規事業開発、受託開発
-資本金：2000万円
-従業員数：10人</div>
-
 <table class="project-table">
   <tr><th>プロジェクト内容</th><td>海外向け衣服レンタルサービス</td></tr>
-  <tr><th>期間</th><td>2025年8月〜現在</td></tr>
+  <tr><th>期間</th><td>2025年8月〜現在（{{COMPANY_80}}時代より継続）</td></tr>
   <tr><th>職種 / 役割</th><td>フロントエンドエンジニア / リーダー</td></tr>
   <tr><th>仕事内容 / チーム規模</th><td>受託開発 / 1〜10人</td></tr>
   <tr>
@@ -139,37 +134,8 @@
 </table>
 
 <table class="project-table">
-  <tr><th>プロジェクト内容</th><td>{{CLIENT_KOSE}}<br>ネイル販売 EC サイト（Shopify テーマ運用 + Checkout UI Extensions）</td></tr>
-  <tr><th>期間</th><td>2024年8月〜現在</td></tr>
-  <tr><th>職種 / 役割</th><td>フロントエンドエンジニア / エンジニアリングマネージャー（兼任）</td></tr>
-  <tr><th>仕事内容 / チーム規模</th><td>受託開発 / 1〜10人</td></tr>
-  <tr>
-    <th>プロジェクト詳細・担当業務・主な実績</th>
-    <td>
-      <div class="detail-block">
-        <div class="detail-label">▼担当業務</div>
-        <ul>
-          <li>顧客折衝</li>
-          <li>タスク管理、進捗管理</li>
-          <li>コードレビュー</li>
-          <li>マネジメント業務</li>
-          <li>導入アプリの調査、選定、導入支援</li>
-          <li>保守運用、見積もり</li>
-        </ul>
-      </div>
-      <div class="detail-block">
-        <div class="detail-label">▼実績</div>
-        顧客から直接要件をヒアリングする形で要件定義を担当し、プラグイン選定では「コスト・将来の保守性・社内知見の有無」を判断軸に、長期運用に耐える構成を優先しました。Shopify 標準やアプリでは実現できないカスタムロジック（外部 API 連携・Webhook 後処理）は <strong>AWS Lambda</strong> に切り出し、テーマ側のロジック肥大化を防ぐ構成としました。決済画面の独自要件は <strong>Shopify Checkout UI Extensions（Remix / Prisma）</strong> として別アプリに分離し、テーマと拡張機能で責務を分けています。<br>
-        コードレビューでは「将来の他メンバーが読めるか（保守性・可読性）」と「コンポーネント分割の妥当性・命名」を中心に確認し、Liquid / JS の責務分離と命名規則をチーム標準として整備しました。オフショアチームに対しては、レビュー時の指摘を「型」として残しナレッジ化することで、レビュー1回あたりの差し戻し件数を継続的に減らしています。タスク整理、タスク割り振り、スケジュール管理などのマネジメント業務、および外部デザインチームとの連携も担当しました。
-      </div>
-    </td>
-  </tr>
-  <tr><th>利用技術</th><td>TypeScript, Tailwind CSS, Shopify Plus, JavaScript, Liquid, Remix, Prisma, AWS Lambda, Jest, Playwright, Linear</td></tr>
-</table>
-
-<table class="project-table">
   <tr><th>プロジェクト内容</th><td>{{CLIENT_LEO_SOPHIA}}<br>EC サイトの保守運用・追加実装</td></tr>
-  <tr><th>期間</th><td>2024年11月〜現在</td></tr>
+  <tr><th>期間</th><td>2024年11月〜現在（{{COMPANY_80}}時代より継続）</td></tr>
   <tr><th>職種 / 役割</th><td>フロントエンドエンジニア / プロジェクトマネージャー（兼任）</td></tr>
   <tr><th>仕事内容 / チーム規模</th><td>受託開発 / 10〜50人</td></tr>
   <tr>
@@ -194,6 +160,42 @@
   </tr>
   <tr><th>利用技術</th><td>HTML5, WordPress, CSS3, Shopify, ecforce, GitHub Actions, Linear</td></tr>
 </table>
+
+<table class="project-table">
+  <tr><th>プロジェクト内容</th><td>{{CLIENT_KOSE}}<br>ネイル販売 EC サイト（Shopify テーマ運用 + Checkout UI Extensions）</td></tr>
+  <tr><th>期間</th><td>2024年8月〜現在（{{COMPANY_80}}時代より継続）</td></tr>
+  <tr><th>職種 / 役割</th><td>フロントエンドエンジニア / エンジニアリングマネージャー（兼任）</td></tr>
+  <tr><th>仕事内容 / チーム規模</th><td>受託開発 / 1〜10人</td></tr>
+  <tr>
+    <th>プロジェクト詳細・担当業務・主な実績</th>
+    <td>
+      <div class="detail-block">
+        <div class="detail-label">▼担当業務</div>
+        <ul>
+          <li>顧客折衝</li>
+          <li>タスク管理、進捗管理</li>
+          <li>コードレビュー</li>
+          <li>マネジメント業務</li>
+          <li>導入アプリの調査、選定、導入支援</li>
+          <li>保守運用、見積もり</li>
+        </ul>
+      </div>
+      <div class="detail-block">
+        <div class="detail-label">▼実績</div>
+        顧客から直接要件をヒアリングする形で要件定義を担当し、プラグイン選定では「コスト・将来の保守性・社内知見の有無」を判断軸に、長期運用に耐える構成を優先しました。Shopify 標準やアプリでは実現できないカスタムロジック（外部 API 連携・Webhook 後処理）は <strong>AWS Lambda</strong> に切り出し、テーマ側のロジック肥大化を防ぐ構成としました。決済画面の独自要件は <strong>Shopify Checkout UI Extensions（Remix / Prisma）</strong> として別アプリに分離し、テーマと拡張機能で責務を分けています。<br>
+        コードレビューでは「将来の他メンバーが読めるか（保守性・可読性）」と「コンポーネント分割の妥当性・命名」を中心に確認し、Liquid / JS の責務分離と命名規則をチーム標準として整備しました。オフショアチームに対しては、レビュー時の指摘を「型」として残しナレッジ化することで、レビュー1回あたりの差し戻し件数を継続的に減らしています。タスク整理、タスク割り振り、スケジュール管理などのマネジメント業務、および外部デザインチームとの連携も担当しました。
+      </div>
+    </td>
+  </tr>
+  <tr><th>利用技術</th><td>TypeScript, Tailwind CSS, Shopify Plus, JavaScript, Liquid, Remix, Prisma, AWS Lambda, Linear</td></tr>
+</table>
+
+<!-- ============================ {{COMPANY_80}} ============================ -->
+<div class="company-header">2022年5月〜2026年3月　{{COMPANY_80}}</div>
+<div class="company-info">事業内容：新規事業開発、受託開発
+資本金：2000万円
+従業員数：10人</div>
+
 
 <table class="project-table">
   <tr><th>プロジェクト内容</th><td>{{CLIENT_KYOTO_SHIMBUN}}<br>伝統工芸品サブスクリプション EC サイト（初期構築 / 2 年後のリニューアル）</td></tr>
@@ -283,9 +285,7 @@
 <h2 class="section-heading">転職理由・今後のキャリア</h2>
 
 <p class="body-text">
-<!-- TODO: 実際の転職理由に合わせて修正してください -->
-現職（{{COMPANY_ATOMS}}）は {{COMPANY_80}} の会社都合による新会社設立に伴い移籍したもので、受託開発中心の小規模環境が続いています。フロントエンドエンジニアとして5年間経験を積んだ現在、より規模の大きなプロダクト・チームの中でデザインとエンジニアリングを横断した価値貢献に挑戦したいと考え、転職活動を開始しました。<br>
-今後は UI / UX を起点に製品価値を高められるフロントエンドエンジニアとして、3〜5年スパンでデザインエンジニアリング領域へのキャリアを広げることを目標としています。
+{{COMPANY_80}} の会社都合による移籍を経て現職に至りますが、フロントエンドエンジニアとして5年のキャリアを積んだ現在、これまで培った実装力・デザイン知見・マネジメント経験を活かしながら、デザインエンジニア・ディレクション・PM など上流から事業に関われる環境へステップアップしたいと考え、転職活動を開始しました。今後は自社プロダクトや成長フェーズのサービスに関わりながら、フロントエンドを軸にデザインと事業の両面へキャリアを広げていくことを目指しています。
 </p>
 
 <h2 class="section-heading">自己PR</h2>
@@ -299,7 +299,7 @@
 </p>
 
 <p class="body-text">
-<strong>デザイン領域への関心</strong> も強く、XD から Figma への移行提案、コンポーネント命名のすり合わせ、色 / アニメーション duration / opacity の共通化など、デザイントークンに通じる運用設計にも取り組んできました。今後はフロントエンドの専門性を深めつつ、デザイン領域の知見と掛け合わせ、UI / UX を起点に価値を生み出せるエンジニアを目指しています。
+<strong>デザイン領域への関心</strong> も強く、XD から Figma への移行提案、コンポーネント命名のすり合わせ、色 / アニメーション duration / opacity の共通化など、デザイントークンに通じる運用設計にも取り組んできました。
 </p>
 
 <p class="body-text">
