@@ -11,10 +11,14 @@
             "id": "f3570d509b24577b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "documents/企業別面談準備/Scene Live/企業情報_自動抽出.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新規タブ"
+              "title": "企業情報_自動抽出"
             }
           }
         ]
@@ -180,6 +184,17 @@
   },
   "active": "f3570d509b24577b",
   "lastOpenFiles": [
+    "documents/企業別面談準備/Scene Live/00_チェックリスト_今すぐやること.md",
+    "documents/企業別面談準備/01_共通知識フレームワーク.md",
+    "documents/企業別面談準備/INDEX.md",
+    "documents/企業別面談準備/企業別準備ガイド・テンプレート.md",
+    "documents/企業別面談準備/準備状況サマリー.md",
+    "documents/企業別面談準備/Scene Live/Scene_Live_完全企業研究ガイド.md",
+    "documents/企業別面談準備/Scene Live/企業情報_自動抽出.md",
+    "documents/企業別面談準備/00_企業別準備ガイド・テンプレート.md",
+    "documents/企業別面談準備/00_準備状況サマリー.md",
+    "documents/企業別面談準備/Scene Live/Scene_Live面談準備ガイド.md",
+    "documents/企業別面談準備/Scene Live/Scene_Live面談ユーザータスク.md",
     "documents/転職tips/00_転職活動Tips目次.md",
     "TODO.md",
     "documents/転職tips/面接で通る方の共通項.md",
