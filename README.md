@@ -9,8 +9,8 @@
 ```text
 resume-data/
 ├── documents/         # 履歴書・職務経歴書の Markdown 原稿
-│   ├── resume_ja.md   # 履歴書（JIS 規格風 / A3 横）
-│   └── career_ja.md   # 職務経歴書（A4 縦）
+│   ├── 履歴書.md       # 履歴書（JIS 規格風 / A3 横）
+│   └── 職務経歴書.md   # 職務経歴書（A4 縦）
 ├── styles/
 │   ├── resume.css     # 履歴書用スタイル
 │   └── career.css     # 職務経歴書用スタイル

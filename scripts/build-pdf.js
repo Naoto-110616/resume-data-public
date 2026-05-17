@@ -23,13 +23,13 @@ loadDotEnv(ENV_PATH);
 
 const TARGETS = {
 	resume: {
-		src: "documents/resume_ja.md",
+		src: "documents/履歴書.md",
 		stylesheet: "styles/resume.css",
 		docType: "履歴書",
 		pdf_options: { format: "A3", landscape: true, margin: "10mm" },
 	},
 	career: {
-		src: "documents/career_ja.md",
+		src: "documents/職務経歴書.md",
 		stylesheet: "styles/career.css",
 		docType: "職務経歴書",
 		pdf_options: { format: "A4", margin: "15mm" },

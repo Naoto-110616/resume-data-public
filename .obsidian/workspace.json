@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e801867879c7d59b",
+        "id": "bd660145bb866553",
         "type": "tabs",
         "children": [
           {
-            "id": "219b34e953de27a5",
+            "id": "a525824befceec17",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -169,34 +169,50 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新規ベースを作成": false,
       "switcher:クイックスイッチャーを開く": false,
       "graph:グラフビューを開く": false,
       "canvas:新規キャンバスを作成": false,
       "daily-notes:今日のデイリーノートを開く": false,
       "templates:テンプレートを挿入": false,
-      "command-palette:コマンドパレットを開く": false,
-      "bases:Create new base": false
+      "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "e6aaf3632ab9dd12",
+  "active": "a525824befceec17",
   "lastOpenFiles": [
-    "exports/大川尚斗_20260510_職務経歴書.pdf",
-    "exports/大川尚斗_20260510_履歴書.pdf",
-    "documents/企業別面談準備/Scene Live/00_チェックリスト_今すぐやること.md",
-    "documents/企業別面談準備/01_共通知識フレームワーク.md",
+    "documents/企業別面談準備/RIT/RIT_カジュアル面談準備チェックリスト.md",
+    "documents/企業別面談準備/RIT/RIT_完全企業研究ガイド.md",
+    "exports/大川尚斗_20260517_職務経歴書.pdf",
+    "exports/大川尚斗_20260517_履歴書.pdf",
+    "documents/templates/面接QA早見表.md",
+    "documents/企業別面談準備/Origia/Origia_企業研究_カジュアル面談.md",
+    "documents/企業別面談準備/Origia",
+    "Origia_企業研究_カジュアル面談.md",
+    "documents/転職tips/06_Findy活用方法.md",
+    "documents/転職tips/00_目次.md",
+    "documents/転職tips/はじめに.md",
+    "documents/企業別面談準備/カナリー/目次.md",
+    "documents/企業別面談準備/目次.md",
+    "documents/templates/自己紹介.md",
+    "documents/templates/スカウト返信.md",
+    "documents/templates/逆質問.md",
+    "documents/templates/転職理由.md",
+    "documents/templates/想定質問と回答.md",
+    "documents/templates/カジュアル面談チェックリスト.md",
+    "documents/履歴書.md",
+    "documents/職務経歴書.md",
+    "documents/templates/準備状況サマリー.md",
+    "documents/templates/casual-talk-checklist.md",
+    "documents/templates/企業別準備ガイド・テンプレート.md",
+    "documents/templates/共通知識フレームワーク.md",
+    "documents/企業別面談準備/共通_基本面接質問_回答言語化.md",
     "documents/企業別面談準備/INDEX.md",
-    "documents/企業別面談準備/企業別準備ガイド・テンプレート.md",
-    "documents/企業別面談準備/準備状況サマリー.md",
-    "documents/企業別面談準備/Scene Live/Scene_Live_完全企業研究ガイド.md",
-    "documents/企業別面談準備/Scene Live/企業情報_自動抽出.md",
-    "documents/企業別面談準備/00_企業別準備ガイド・テンプレート.md",
-    "documents/企業別面談準備/00_準備状況サマリー.md",
-    "documents/企業別面談準備/Scene Live/Scene_Live面談準備ガイド.md",
-    "documents/企業別面談準備/Scene Live/Scene_Live面談ユーザータスク.md",
-    "documents/転職tips/00_転職活動Tips目次.md",
-    "TODO.md",
-    "documents/転職tips/面接で通る方の共通項.md",
-    "documents/転職tips/技術面接のポイント.md",
-    "documents/転職tips/README.md"
+    "documents/企業別面談準備/カナリー/カナリー_企業情報詳細.md",
+    "documents/企業別面談準備/カナリー/カナリー_完全企業研究ガイド.md",
+    "documents/企業別面談準備/カナリー",
+    "documents/weekly_reports",
+    "documents/企業別面談準備/RIT",
+    "exports/大川尚斗_20260510_職務経歴書.pdf",
+    "exports/大川尚斗_20260510_履歴書.pdf"
   ]
 }
