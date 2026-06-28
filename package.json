@@ -6,6 +6,13 @@
   "scripts": {
     "pdf:resume": "node scripts/build-pdf.js resume",
     "pdf:career": "node scripts/build-pdf.js career",
+    "pdf:resume-sakura": "node scripts/build-pdf.js resume-sakura",
+    "pdf:career-sakura": "node scripts/build-pdf.js career-sakura",
+    "pdf:sakura": "node scripts/build-pdf.js resume-sakura career-sakura",
+    "pdf:resume-fenrir": "node scripts/build-pdf.js resume-fenrir",
+    "pdf:career-fenrir": "node scripts/build-pdf.js career-fenrir",
+    "pdf:fenrir": "node scripts/build-pdf.js resume-fenrir career-fenrir",
+    "pdf:generic": "node scripts/build-pdf.js resume career",
     "pdf": "node scripts/build-pdf.js"
   },
   "devDependencies": {

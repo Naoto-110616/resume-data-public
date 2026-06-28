@@ -34,6 +34,30 @@ const TARGETS = {
 		docType: "職務経歴書",
 		pdf_options: { format: "A4", margin: "15mm" },
 	},
+	"resume-sakura": {
+		src: "documents/履歴書_さくら.md",
+		stylesheet: "styles/resume.css",
+		docType: "履歴書_さくら",
+		pdf_options: { format: "A3", landscape: true, margin: "10mm" },
+	},
+	"career-sakura": {
+		src: "documents/職務経歴書_さくら.md",
+		stylesheet: "styles/career.css",
+		docType: "職務経歴書_さくら",
+		pdf_options: { format: "A4", margin: "15mm" },
+	},
+	"resume-fenrir": {
+		src: "documents/履歴書_フェンリル.md",
+		stylesheet: "styles/resume.css",
+		docType: "履歴書_フェンリル",
+		pdf_options: { format: "A3", landscape: true, margin: "10mm" },
+	},
+	"career-fenrir": {
+		src: "documents/職務経歴書_フェンリル.md",
+		stylesheet: "styles/career.css",
+		docType: "職務経歴書_フェンリル",
+		pdf_options: { format: "A4", margin: "15mm" },
+	},
 };
 
 const PROFILE = buildProfile();
@@ -236,9 +260,9 @@ function applyTokens(raw, values) {
 }
 
 (async () => {
-	const arg = process.argv[2];
+	const args = process.argv.slice(2);
 	const today = formatToday(new Date());
-	const keys = arg ? [arg] : Object.keys(TARGETS);
+	const keys = args.length ? args : Object.keys(TARGETS);
 
 	for (const k of keys) {
 		await buildOne(k, today);
